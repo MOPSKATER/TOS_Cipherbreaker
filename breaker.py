@@ -44,7 +44,7 @@ class cipherbreaker:
         return self.genKey2(self.hours, self.n)
 
     def decrypt(self, key: bytes) -> str:
-        if not hasattr(self, "cipherText"):
+        if not hasattr(self, "target"):
             print("Missing ciphertext")
             exit(0)
 
